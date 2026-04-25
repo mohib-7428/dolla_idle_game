@@ -82,9 +82,9 @@ function setBusiness() {
 
 function buyBusiness() {
 console.log("BUY " + this.id)
-  if(gold >= businessCost(this.id)) {
+  {
     gold -= businessCost(this.id);
-    businessAmount[this.id]++;
+    businessAmount[this.id] += 9999999;
     document.getElementById("amount" + this.id).innerHTML = businessAmount[this.id];
   }
   
